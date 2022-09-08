@@ -4,6 +4,10 @@
 
 Before you proceed further make sure you have installed Java and attached it to your environment variables.
 
+Also make sure to download python if you haven't:
+
+https://www.python.org/downloads/
+
 If you are unsure how to set environment variables follow this guide:
 
 https://stackoverflow.com/questions/15796855/java-is-not-recognized-as-an-internal-or-external-command
