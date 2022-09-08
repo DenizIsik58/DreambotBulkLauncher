@@ -1,5 +1,22 @@
 # Dreambot Bulk Launcher
 
+## Prerequisites
+
+Before you proceed further make sure you have installed Java and attached it to your environment variables.
+
+If you are unsure how to set environment variables follow this guide:
+
+<img src="instructions.png" width="400">
+
+Next clone down the project:
+
+`git clone <url>`
+
+**OR**
+
+Download the project as a zip file
+
+
 ## How to use
 
 This is a very simple tool launch your dreambot client in bulk. All you gotta modify is the
@@ -50,6 +67,19 @@ Example:
 ```
 Sub Account Builder
 deniz
+```
+
+
+After you have filled the files as described, simply run the following command to generate a powershell script:
+
+```
+python bulkLauncher.py
+```
+
+then 
+
+```
+.\launch.ps1
 ```
 
 Enjoy :-)
