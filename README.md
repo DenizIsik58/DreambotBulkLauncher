@@ -6,7 +6,7 @@ Before you proceed further make sure you have installed Java and attached it to 
 
 If you are unsure how to set environment variables follow this guide:
 
-<img src="instructions.png" width="400">
+https://stackoverflow.com/questions/15796855/java-is-not-recognized-as-an-internal-or-external-command
 
 Next clone down the project:
 
