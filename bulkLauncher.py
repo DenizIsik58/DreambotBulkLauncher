@@ -14,7 +14,7 @@ def bulkLaunch(scriptName, yourName):
         for accounts in accs:
             account = accounts.split(":")
             userName = account[0]
-            passWord = account[1]
+            passWord = account[1].replace("\n", "")
             prxy = random.choice(proxyList).split(":")
             proxyHost = prxy[0]
             proxyPort = prxy[1]
@@ -22,6 +22,7 @@ def bulkLaunch(scriptName, yourName):
             proxyPass = prxy[3].replace("\n", "")
             command = f'javaw -jar C:\\Users\\{yourName}\DreamBot\BotData\client.jar -script "{scriptName}" -accountUsername "{userName}" -accountPassword "{passWord}" -proxyHost "{proxyHost}" -proxyPort "{proxyPort}" -proxyUser "{proxyUsername}" -proxyPass "{proxyPass}" -breaks "Eating","Headache break" -minimized \n'
             script.write(command)
+            print(command)
 
     script.close()
 
