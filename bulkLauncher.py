@@ -20,7 +20,8 @@ def bulkLaunch(scriptName, yourName):
             proxyPort = prxy[1]
             proxyUsername = prxy[2]
             proxyPass = prxy[3].replace("\n", "")
-            command = f'javaw -jar C:\\Users\\{yourName}\DreamBot\BotData\client.jar -script "{scriptName}" -accountUsername "{userName}" -accountPassword "{passWord}" -proxyHost "{proxyHost}" -proxyPort "{proxyPort}" -proxyUser "{proxyUsername}" -proxyPass "{proxyPass}" -breaks "Eating","Headache break" -minimized \n'
+
+            command = f'javaw -Xmx512M -jar C:\\Users\\{yourName}\DreamBot\BotData\client.jar -script "{scriptName}" -fps 20 -no-fresh -destroy -accountUsername "{userName}" -accountPassword "{passWord}" -proxyHost "{proxyHost}" -proxyPort "{proxyPort}" -proxyUser "{proxyUsername}" -proxyPass "{proxyPass}" -breaks "Eating","Headache break" -minimized\nStart-Sleep -Seconds 15\n'
             script.write(command)
             print(command)
 
